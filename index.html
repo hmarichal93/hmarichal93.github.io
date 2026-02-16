@@ -37,374 +37,244 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Main Content -->
+    <main class="main-content">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="assets/img/profile.png" alt="Henry Marichal" class="profile-img">
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        Senior ML Engineer @ Pento
-                    </div>
-                </div>
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="gradient-text">Henry Marichal</span>
-                    </h1>
-                    <p class="hero-subtitle">Computer Vision Researcher | PhD in Image Processing</p>
-                    <p class="hero-description">
-                        Senior Machine Learning Engineer at Pento, specializing in deep learning, 
-                        computer vision, and image segmentation. PhD researcher in automatic tree ring 
-                        detection with published work and open-source contributions.
-                    </p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Years Experience</span>
+            <div class="content-wrapper">
+                <!-- Left Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-content">
+                        <div class="profile-section">
+                            <img src="assets/img/profile.png" alt="Henry Marichal" class="profile-img">
+                            <h1 class="profile-name">Henry Marichal</h1>
+                            <p class="profile-title">Computer Vision Researcher | PhD in Image Processing</p>
+                            <p class="profile-position">Senior ML Engineer @ Pento</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">Multiple</span>
-                            <span class="stat-label">Publications</span>
+                        
+                        <div class="contact-section">
+                            <a href="mailto:hmarichal93@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                hmarichal93@gmail.com
+                            </a>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Open Source Tools</span>
+                        
+                        <div class="social-section">
+                            <a href="https://github.com/hmarichal93" target="_blank" aria-label="GitHub" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/henry-marichal/" target="_blank" aria-label="LinkedIn" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=SiCPozMAAAAJ&hl=en" target="_blank" aria-label="Google Scholar" class="social-link">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                            <a href="assets/img/HenryMarichal_cv_latest.pdf" target="_blank" aria-label="CV" class="social-link">
+                                <i class="fas fa-file-pdf"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="hero-cta">
-                        <a href="assets/img/HenryMarichal_cv_latest.pdf" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-file-pdf"></i>
-                            Download CV
-                        </a>
-                        <a href="#projects" class="btn btn-secondary">
-                            <i class="fas fa-code"></i>
-                            View Projects
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=SiCPozMAAAAJ&hl=en" target="_blank" class="btn btn-secondary">
-                            <i class="fas fa-graduation-cap"></i>
-                            Publications
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/hmarichal93" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/henry-marichal/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://scholar.google.com/citations?user=SiCPozMAAAAJ&hl=en" target="_blank" aria-label="Google Scholar">
-                            <i class="fas fa-graduation-cap"></i>
-                        </a>
-                        <a href="mailto:hmarichal93@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
+                </aside>
+
+                <!-- Right Main Column -->
+                <div class="main-column">
+                    <!-- About Section -->
+                    <section id="about" class="content-section">
+                        <h2 class="section-title">About</h2>
+                        <div class="section-content">
+                            <p>
+                                I'm a Senior Machine Learning Engineer at Pento and PhD in Computer Vision with over 5 years 
+                                of experience developing deep learning solutions for image segmentation and analysis.
+                            </p>
+                            <p>
+                                I completed my PhD thesis on <strong>automatic tree ring detection and analysis</strong>, 
+                                where I developed novel deep learning architectures and open-source tools that are now used 
+                                by the dendrochronology research community worldwide.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Research Section -->
+                    <section id="research" class="content-section">
+                        <h2 class="section-title">Research</h2>
+                        <div class="section-content">
+                            <p>
+                                My research focuses on creating efficient, explainable, and impactful AI systems for challenging domains including dendrochronology, medical imaging, and scientific image analysis. I specialize in deep learning architectures for image segmentation and analysis.
+                            </p>
+   
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <section id="projects" class="content-section">
+                        <h2 class="section-title">Projects</h2>
+                        <div class="section-content">
+                            <div class="project-item">
+                                <h3>
+                                    <a href="https://hmarichal93.github.io/tras/" target="_blank">TRAS – Tree Ring Analyzer Suite</a>
+                                    <span class="project-links">
+                                        <a href="https://hmarichal93.github.io/tras/" target="_blank" aria-label="Documentation">
+                                            <i class="fas fa-book"></i>
+                                        </a>
+                                    </span>
+                                </h3>
+                                <p class="project-description">
+                                    Professional dendrochronology software with state-of-the-art CV & DL methods. 
+                                    A complete GUI application built with PyQt5 for automatic tree ring detection and measurement. 
+                                    Integrates multiple detection methods (APD, CS-TRD, DeepCS-TRD) with preprocessing, 
+                                    scale calibration, and professional data export capabilities.
+                                </p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">PyQt5</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                </p>
+                            </div>
+
+                            <div class="project-item">
+                                <h3>
+                                    <a href="https://hmarichal93.github.io/deepcstrd/" target="_blank">DeepCS-TRD – Deep Learning for Tree Ring Detection</a>
+                                    <span class="project-links">
+                                        <a href="https://hmarichal93.github.io/deepcstrd/" target="_blank" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://arxiv.org/abs/2504.16242" target="_blank" aria-label="Research Paper">
+                                            <i class="fas fa-file-alt"></i>
+                                        </a>
+                                    </span>
+                                </h3>
+                                <p class="project-description">
+                                    State-of-the-art U-Net-based tree-ring segmentation. A cutting-edge deep learning method 
+                                    achieving superior performance compared to traditional approaches. Includes annotated dataset, 
+                                    benchmarking scripts, and pre-trained models. Reduces analysis time from hours to minutes.
+                                </p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">U-Net</span>
+                                    <span class="tech-tag">Computer Vision</span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Publications Section -->
+                    <section id="publications" class="content-section">
+                        <h2 class="section-title">Selected Publications</h2>
+                        <div class="section-content">
+                            <p class="section-subtitle">
+                                For a complete list, visit my 
+                                <a href="https://scholar.google.com/citations?user=SiCPozMAAAAJ&hl=en" target="_blank" class="link">
+                                    Google Scholar profile <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </p>
+                            
+                            <h3>Recent Journal & Conference Papers</h3>
+                            <ol class="publication-list">
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Blanco, J., Passarella, D., Randall, G. (2025).
+                                        <strong>UruDendro4: A Benchmark Dataset for Automatic Tree-Ring Detection in Cross-Section Images of Pinus taeda L.</strong>
+                                        <em>IEEE 15th International Conference on Pattern Recognition Systems (ICPRS-25)</em>.
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://doi.org/10.48550/arXiv.2511.20935" target="_blank" class="pub-link">
+                                            <i class="fas fa-file-alt"></i> Article
+                                        </a>
+                                        <a href="https://doi.org/10.5281/zenodo.15653340" target="_blank" class="pub-link">
+                                            <i class="fas fa-database"></i> Dataset
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Casaravilla, V., Power, C., Mello, K., Profumo, L., Mazarino, J., Lucas, C., Passarella, D., Randall, G. (2025).
+                                        <strong>DeepCS-TRD, a Deep Learning-based Cross-Section Tree Ring Detector.</strong>
+                                        <em>International Conference on Image Analysis and Processing (ICIAP)</em>.
+                                        <span class="pub-status">Accepted</span>.
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://hmarichal93.github.io/deepcstrd/" target="_blank" class="pub-link">
+                                            <i class="fas fa-external-link-alt"></i> Project Page
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Passarella, D., Lucas, C., Profumo, L., Casaravilla, V., Rocha Galli, M. N., Ambite, S., Randall, G. (2025).
+                                        <strong>UruDendro, a public dataset of 64 cross-section images and manual annual ring delineations of Pinus taeda L.</strong>
+                                        <em>Annals of Forest Science</em>.
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://rdcu.be/euo3F" target="_blank" class="pub-link">
+                                            <i class="fas fa-external-link-alt"></i> Article
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Passarella, D., Randall, G. (2025).
+                                        <strong>CS-TRD: a Cross-Section Tree Ring Detection Method.</strong>
+                                        <em>Image Processing On Line (IPOL)</em>.
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://doi.org/10.5201/ipol.2025.485" target="_blank" class="pub-link">
+                                            <i class="fas fa-external-link-alt"></i> Article
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Passarella, D., Randall, G. (2024).
+                                        <strong>Automatic Wood Pith Detector: Local Orientation Estimation and Robust Accumulation.</strong>
+                                        <em>International Conference on Pattern Recognition (ICPR)</em>.
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://github.com/hmarichal93/apd" target="_blank" class="pub-link">
+                                            <i class="fab fa-github"></i> Code
+                                        </a>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <h3>Under Review & Submitted</h3>
+                            <ol class="publication-list">
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Passarella, D., Randall, G. (2024).
+                                        <strong>TRAS: An Interactive Software for Tracing Tree Ring Cross Sections.</strong>
+                                        <span class="pub-status">Under Review</span>.
+                                    </p>
+                                </li>
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H., Power, C., Treier, U. A., Resente, G., Normand, S., Randall, G. (2024).
+                                        <strong>Assessing automatic ring detection on microscopy images of Salix glauca.</strong>
+                                        <span class="pub-status">Under Review</span>.
+                                    </p>
+                                </li>
+                            </ol>
+
+                            <h3>Thesis</h3>
+                            <ol class="publication-list">
+                                <li class="publication-item">
+                                    <p class="citation-text">
+                                        Marichal, H. (2025).
+                                        <strong>Application of Image Processing and Artificial Intelligence Techniques for the Automatic Dendrometry of Native and Commercial Wood Species.</strong>
+                                        Doctoral Thesis in Electrical Engineering, Universidad de la República. (Advisors: Gregory Randall and Diego Passarella).
+                                    </p>
+                                    <div class="publication-links">
+                                        <a href="https://hdl.handle.net/20.500.12008/52991" target="_blank" class="pub-link">
+                                            <i class="fas fa-external-link-alt"></i> Read Thesis
+                                        </a>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        I'm a Senior Machine Learning Engineer at Pento and PhD in Computer Vision with over 5 years 
-                        of experience developing deep learning solutions for image segmentation and analysis.
-                    </p>
-                    <p>
-                        I completed my PhD thesis on <strong>automatic tree ring detection and analysis</strong>, 
-                        where I developed novel deep learning architectures and open-source tools that are now used 
-                        by the dendrochronology research community worldwide.
-                    </p>
-                    <p>
-                        My research focuses on creating <strong>efficient, explainable, and impactful AI systems</strong> 
-                        for challenging domains including dendrochronology, medical imaging, and scientific image analysis.
-                    </p>
-                    <div class="impact-metrics">
-                        <div class="metric-card">
-                            <i class="fas fa-book"></i>
-                            <p>Published peer-reviewed papers</p>
-                        </div>
-                        <div class="metric-card">
-                            <i class="fas fa-globe"></i>
-                            <p>Tools used internationally</p>
-                        </div>
-                        <div class="metric-card">
-                            <i class="fas fa-clock"></i>
-                            <p>Reduced analysis from hours to minutes</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Interests -->
-    <section id="research" class="research">
-        <div class="container">
-            <h2 class="section-title">Research Interests</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="card-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Computer Vision</h3>
-                    <ul>
-                        <li>Image Segmentation</li>
-                        <li>Object Detection</li>
-                        <li>Boundary Tracing</li>
-                    </ul>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Deep Learning</h3>
-                    <ul>
-                        <li>U-Net Architectures</li>
-                        <li>CNNs & Domain Adaptation</li>
-                        <li>Model Optimization</li>
-                    </ul>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>Applied AI</h3>
-                    <ul>
-                        <li>Dendrochronology</li>
-                        <li>Medical Imaging</li>
-                        <li>Scientific Image Analysis</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-row-list">
-                <div class="project-card project-row">
-                    <div class="project-row-icon">
-                        <img src="https://github.com/hmarichal93/tras/blob/streamlit2labelme/assets/tras-logo.png?raw=true" alt="TRAS logo">
-                    </div>
-                    <div class="project-row-content">
-                        <div class="project-row-header">
-                            <div class="project-row-text">
-                                <h3>TRAS – Tree Ring Analyzer Suite</h3>
-                                <p class="project-tagline">Professional dendrochronology software with state-of-the-art CV & DL methods</p>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://hmarichal93.github.io/tras/" target="_blank" aria-label="GitHub Repository">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://hmarichal93.github.io/tras/" target="_blank" aria-label="Documentation">
-                                    <i class="fas fa-book"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            A complete GUI application built with PyQt5 for automatic tree ring detection and measurement. 
-                            Integrates multiple detection methods (APD, CS-TRD, DeepCS-TRD) with preprocessing, 
-                            scale calibration, and professional data export capabilities.
-                        </p>
-                        <div class="project-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                Automatic pith & ring detection with deep learning
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                Scale calibration and physical measurements
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                CSV & .POS format exports
-                            </div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PyQt5</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card project-row">
-                    <div class="project-row-icon">🌲</div>
-                    <div class="project-row-content">
-                        <div class="project-row-header">
-                            <div class="project-row-text">
-                                <h3>DeepCS-TRD – Deep Learning for Tree Ring Detection</h3>
-                                <p class="project-tagline">State-of-the-art U-Net-based tree-ring segmentation</p>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://hmarichal93.github.io/deepcstrd/" target="_blank" aria-label="GitHub Repository">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://arxiv.org/abs/2504.16242" target="_blank" aria-label="Research Paper">
-                                    <i class="fas fa-file-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <p class="project-description">
-                            A cutting-edge deep learning method achieving superior performance compared to traditional 
-                            approaches. Includes annotated dataset, benchmarking scripts, and pre-trained models.
-                        </p>
-                        <div class="project-features">
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                Reduces analysis time from hours to minutes
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                High accuracy on challenging samples
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-check"></i>
-                                Includes fully annotated dataset
-                            </div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">U-Net</span>
-                            <span class="tech-tag">Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2 class="section-title">Selected Publications</h2>
-            <p class="section-subtitle">
-                For a complete list, visit my 
-                <a href="https://scholar.google.com/citations?user=SiCPozMAAAAJ&hl=en" target="_blank" class="link">
-                    Google Scholar profile <i class="fas fa-external-link-alt"></i>
-                </a>
-            </p>
-            
-            <div class="publications-list">
-                <div class="publication-category">
-                    <h3><i class="fas fa-book"></i> Recent Journal & Conference Papers</h3>
-                    <ol class="publication-citations">
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Blanco, J., Passarella, D., Randall, G. (2025).
-                                <strong>UruDendro4: A Benchmark Dataset for Automatic Tree-Ring Detection in Cross-Section Images of Pinus taeda L.</strong>
-                                <em>IEEE 15th International Conference on Pattern Recognition Systems (ICPRS-25)</em>.
-                                <span class="pub-status">Accepted</span>.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://doi.org/10.5281/zenodo.15653340" target="_blank" class="pub-link">
-                                    <i class="fas fa-database"></i> View Dataset
-                                </a>
-                            </div>
-                        </li>
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Casaravilla, V., Power, C., Mello, K., Profumo, L., Mazarino, J., Lucas, C., Passarella, D., Randall, G. (2025).
-                                <strong>DeepCS-TRD, a Deep Learning-based Cross-Section Tree Ring Detector.</strong>
-                                <em>International Conference on Image Analysis and Processing (ICIAP)</em>.
-                                <span class="pub-status">Accepted</span>.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://hmarichal93.github.io/deepcstrd/" target="_blank" class="pub-link">
-                                    <i class="fas fa-external-link-alt"></i> View Project Page
-                                </a>
-                            </div>
-                        </li>
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Passarella, D., Lucas, C., Profumo, L., Casaravilla, V., Rocha Galli, M. N., Ambite, S., Randall, G. (2025).
-                                <strong>UruDendro, a public dataset of 64 cross-section images and manual annual ring delineations of Pinus taeda L.</strong>
-                                <em>Annals of Forest Science</em>.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://rdcu.be/euo3F" target="_blank" class="pub-link">
-                                    <i class="fas fa-external-link-alt"></i> View Article
-                                </a>
-                            </div>
-                        </li>
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Passarella, D., Randall, G. (2025).
-                                <strong>CS-TRD: a Cross-Section Tree Ring Detection Method.</strong>
-                                <em>Image Processing On Line (IPOL)</em>.
-                                <span class="pub-status">Accepted</span>.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://www.ipol.im/pub/pre/485/" target="_blank" class="pub-link">
-                                    <i class="fas fa-external-link-alt"></i> View Article
-                                </a>
-                            </div>
-                        </li>
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Passarella, D., Randall, G. (2024).
-                                <strong>Automatic Wood Pith Detector: Local Orientation Estimation and Robust Accumulation.</strong>
-                                <em>International Conference on Pattern Recognition (ICPR)</em>.
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://github.com/hmarichal93/apd" target="_blank" class="pub-link">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="publication-category">
-                    <h3><i class="fas fa-file-alt"></i> Under Review & Submitted</h3>
-                    <ol class="publication-citations">
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Passarella, D., Randall, G. (2024).
-                                <strong>TRAS: An Interactive Software for Tracing Tree Ring Cross Sections.</strong>
-                                <span class="pub-status">Under Review</span>.
-                            </p>
-                        </li>
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H., Power, C., Treier, U. A., Resente, G., Normand, S., Randall, G. (2024).
-                                <strong>Assessing automatic ring detection on microscopy images of Salix glauca.</strong>
-                                <span class="pub-status">Under Review</span>.
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-
-                <div class="publication-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Thesis</h3>
-                    <ol class="publication-citations">
-                        <li class="publication-item">
-                            <p class="citation-text">
-                                Marichal, H. (2025).
-                                <strong>Application of Image Processing and Artificial Intelligence Techniques for the Automatic Dendrometry of Native and Commercial Wood Species.</strong>
-                                Doctoral Thesis in Electrical Engineering, Universidad de la República. (Advisors: Gregory Randall and Diego Passarella).
-                            </p>
-                            <div class="publication-links">
-                                <a href="https://finguy-my.sharepoint.com/:b:/g/personal/henry_marichal_fing_edu_uy/EVqaf0IPOTRFgRmYop6PLjMBXwEZR7D5fF8hh2UqZ6ZoUw?e=zHxJkH" target="_blank" class="pub-link">
-                                    <i class="fas fa-external-link-alt"></i> Read Thesis
-                                </a>
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
