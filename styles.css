@@ -242,6 +242,14 @@ em {
     border: 3px solid var(--border);
 }
 
+.profile-award {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
 .profile-name {
     font-size: 1.5rem;
     font-weight: 700;
