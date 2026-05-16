@@ -358,6 +358,34 @@ em {
 }
 
 /* ============================================
+   News Section
+   ============================================ */
+
+.news-list {
+    list-style: none;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 0 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-light);
+    font-size: 0.95rem;
+    align-items: baseline;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* ============================================
    Experience Section
    ============================================ */
 
