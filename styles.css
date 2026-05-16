@@ -422,6 +422,22 @@ em {
    Projects Section
    ============================================ */
 
+.dataset-list {
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 2;
+}
+
+.dataset-list a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.dataset-list a:hover {
+    color: var(--accent);
+}
+
 .project-item {
     margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-md);
