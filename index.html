@@ -50,6 +50,7 @@
                             <h1 class="profile-name">Henry Marichal</h1>
                             <p class="profile-title">Machine Learning Engineer | PhD in Computer Vision</p>
                             <p class="profile-position">Senior ML Engineer @ Pento</p>
+                            <p class="profile-skills">Python · PyTorch · Docker · GCP · OpenCV · C++</p>
                             <p class="profile-award">
                                 First Prize in Doctoral Thesis, Electrical Engineering (ANIU)
                             </p>
@@ -127,6 +128,75 @@
                         </div>
                     </section>
 
+                    <!-- Experience Section -->
+                    <section id="experience" class="content-section">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="section-content">
+
+                            <div class="experience-item">
+                                <h3>Senior ML Engineer</h3>
+                                <p class="experience-org">Pento — Remote</p>
+                                <p class="experience-period">2025 – Present</p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>ML Engineer (Freelance)</h3>
+                                <p class="experience-org">MISMO — San Francisco, USA</p>
+                                <p class="experience-period">Mar 2025 – Apr 2025</p>
+                                <p>Designed and implemented a containerized system that automatically detects and crops the primary speaker in long-format videos for social media (9:16 vertical output). Integrated MediaPipe BlazePose with scene-change detection and linear interpolation for smooth virtual camera movement. Processed 2-hour videos in under 45 minutes.</p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">MediaPipe</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">Docker</span>
+                                </p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>ML Engineer (Freelance)</h3>
+                                <p class="experience-org">IATech-Conaprole — Montevideo, Uruguay</p>
+                                <p class="experience-period">Jul 2024 – Aug 2024</p>
+                                <p>Developed an image analysis tool to estimate shelf space occupied by specific products in grocery store images, framed as a dense object detection task.</p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">YOLOv5</span>
+                                    <span class="tech-tag">GCP</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                    <span class="tech-tag">Python</span>
+                                </p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>ML Engineer</h3>
+                                <p class="experience-org">Digital Sense — Montevideo, Uruguay</p>
+                                <p class="experience-period">Nov 2021 – Jun 2024</p>
+                                <p>Worked across multiple computer vision projects: pose-based workout feedback using landmark rules; multiband satellite image registration with deep feature extraction and robust match filtering; and object detection on edge devices (Android GPU, YOLOv5) and surveillance cameras (speed analysis with Kalman filtering).</p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">MediaPipe</span>
+                                    <span class="tech-tag">Snowflake</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">C++</span>
+                                </p>
+                            </div>
+
+                            <div class="experience-item">
+                                <h3>Service Engineer / Junior Developer</h3>
+                                <p class="experience-org">Isbel S.A. — Montevideo, Uruguay</p>
+                                <p class="experience-period">Feb 2018 – Oct 2021</p>
+                                <p>Supported AMI telemeasurement platforms and live/VOD video streaming systems (H.264, HEVC, HLS/DASH). Built a Grafana + Prometheus monitoring dashboard for video processing clusters.</p>
+                                <p class="project-tech">
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Grafana</span>
+                                    <span class="tech-tag">Linux</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">C++</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </section>
+
                     <!-- Projects Section -->
                     <section id="projects" class="content-section">
                         <h2 class="section-title">Projects</h2>
@@ -177,6 +247,59 @@
                                     <span class="tech-tag">Computer Vision</span>
                                 </p>
                             </div>
+
+                            <h3>Datasets</h3>
+
+                            <div class="project-item">
+                                <h3>UruDendro</h3>
+                                <p class="project-description">64 cross-section images with manually annotated annual ring delineations of <em>Pinus taeda</em> L., including challenging cases such as fungal infections, knots, and radial cracks.</p>
+                                <div class="publication-links">
+                                    <a href="https://zenodo.org/records/15110647" target="_blank" class="pub-link">
+                                        <i class="fas fa-database"></i> Zenodo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <h3>UruDendro2</h3>
+                                <p class="project-description">53 cross-section images of <em>Pinus taeda</em> L. with annotated ring boundaries, earlywood–latewood transitions, and reaction wood patterns.</p>
+                                <div class="publication-links">
+                                    <a href="https://zenodo.org/records/15652452" target="_blank" class="pub-link">
+                                        <i class="fas fa-database"></i> Zenodo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <h3>UruDendro3a</h3>
+                                <p class="project-description">9 cross-section images of <em>Gleditsia triacanthos</em> L. (an angiosperm species) with annotated annual rings and earlywood–latewood transitions.</p>
+                                <div class="publication-links">
+                                    <a href="https://zenodo.org/records/15652668" target="_blank" class="pub-link">
+                                        <i class="fas fa-database"></i> Zenodo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <h3>UruDendro4</h3>
+                                <p class="project-description">102 annotated benchmark images of <em>Pinus taeda</em> L. with polygon-based ring annotations and pith locations, designed for ML model development and benchmarking.</p>
+                                <div class="publication-links">
+                                    <a href="https://zenodo.org/records/15653340" target="_blank" class="pub-link">
+                                        <i class="fas fa-database"></i> Zenodo
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <h3>Salix glauca — Western Greenland</h3>
+                                <p class="project-description">50 high-resolution cross-section images of <em>Salix glauca</em> from Arctic shrub samples (Disko Island, Greenland) with manually annotated annual rings for dendroecology research.</p>
+                                <div class="publication-links">
+                                    <a href="https://zenodo.org/records/15311335" target="_blank" class="pub-link">
+                                        <i class="fas fa-database"></i> Zenodo
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </section>
 
