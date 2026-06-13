@@ -64,5 +64,32 @@ document.addEventListener('keydown', (e) => {
 const footer = document.querySelector('.footer p');
 if (footer) {
     const currentYear = new Date().getFullYear();
-    footer.innerHTML = footer.innerHTML.replace('2024', currentYear);
+    footer.innerHTML = footer.innerHTML.replace(/\b\d{4}\b/, currentYear);
+}
+
+// Scroll-spy: highlight the nav link for the section currently in view
+const sections = document.querySelectorAll('main section[id]');
+const navLinkMap = new Map();
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
+    navLinkMap.set(link.getAttribute('href').slice(1), link);
+});
+
+if (sections.length && navLinkMap.size) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const link = navLinkMap.get(entry.target.id);
+                if (link) {
+                    navLinkMap.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            }
+        });
+    }, {
+        // Trigger when a section's top crosses the upper third of the viewport
+        rootMargin: '-90px 0px -70% 0px',
+        threshold: 0
+    });
+
+    sections.forEach(section => observer.observe(section));
 }

@@ -192,8 +192,14 @@ em {
     transition: var(--transition);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
     width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 .nav-toggle {
@@ -240,14 +246,6 @@ em {
     object-fit: cover;
     margin-bottom: var(--spacing-md);
     border: 3px solid var(--border);
-}
-
-.profile-award {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: var(--text-secondary);
-    font-weight: 500;
 }
 
 .profile-name {
@@ -355,6 +353,19 @@ em {
     margin-bottom: var(--spacing-md);
     font-size: 0.95rem;
     color: var(--text-muted);
+}
+
+/* Research sub-category headings (distinct from project titles) */
+.research-category {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 1px solid var(--border-light);
 }
 
 /* ============================================
